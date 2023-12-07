@@ -141,7 +141,9 @@
       format("truetype");
   font-display: swap;
 }
-@import "fonts.scss";
+
+@import url(./colors.scss);
+
 /* Обнуляем стандартные отступы и поля браузера */
 body,
 h1,
@@ -154,15 +156,14 @@ ul {
 
 /* Устанавливаем базовый шрифт и размер */
 body {
-  width: 1600px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
 /* Общий стиль для контейнера страницы */
 .container {
+  padding: 0 350px;
   margin: 0 auto; /* Центрируем контейнер на странице */
-  padding: 0 200px;
 }
 
 /* Стили для заголовков */
@@ -191,26 +192,182 @@ ul {
 a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 /* Основные стили */
 
-header {
-  margin: 50px 0;
-  width: 1200px;
-  padding: 20px 30px;
-
+.header {
+  margin: 30px 0;
+  padding: 0px 30px;
   background: var(--color-background);
-  box-shadow: 0px 0px 10px 0px rgba(83, 83, 83, 0.144);
+  box-shadow: 0px 0px 20px 0px rgba(83, 83, 83, 0.144);
   border-radius: 100px;
-  &_content{
-    nav{
-      
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      gap: 4rem;
+      li {
+        a {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: var(--color-dark);
+          text-wrap: nowrap;
+        }
+        a:hover {
+          color: #0063d4;
+          transition: 0.3s;
+        }
+      }
+    }
+    button {
+      background: #fd0101;
+      border: 0;
+      height: 40px;
+      width: 220px;
+      border-radius: 30px;
+      a {
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 700;
+      }
+    }
+    button:hover {
+      color: #0063d4;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.144);
+      transition: 0.3s;
+      a {
+        color: #0063d48a;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+.gretings {
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  height: 600px;
+  background: #0982e5;
+  border-radius: 30px;
+  &_content {
+    display: flex;
+    width: 80%;
+    height: 400px;
+    margin: 70px auto;
+    flex-direction: column;
+    align-items: center;
+    span {
+      display: flex;
+      color: #fff;
+      font-size: 1.3rem;
+      line-height: 120%;
+      font-weight: 500;
+      align-items: center;
+    }
+    .span_info {
+      background: #53a8ed;
+      border-radius: 30px;
+      padding: 10px 30px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #fff;
+      font-size: 4rem;
+      line-height: 100%;
+      width: 80%;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+    .danger {
+      color: #ffffff;
+      font-size: 30px;
+      margin: 0 10px;
+      font-weight: 800;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: #53a8ed;
+      border: 0;
+      border-radius: 30px;
+      padding: 10px 30px;
+      margin-top: 50px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.144);
+      a {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+    button:hover {
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.144);
+      transition: 0.3s;
+    }
+    #line-left {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    #line-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    #installation {
+      position: absolute;
+      bottom: -60px;
+      left: 100px;
+      width: 250px;
+      transform: rotate(-10deg);
+      img {
+        width: 250px;
+        border-radius: 20px;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: #53a8ed;
+        top: -10px;
+        left: -10px;
+        border-radius: 20px;
+        z-index: -1;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.144);
+        transform: rotate(-2deg);
+      }
+    }
+    #installation2 {
+      position: absolute;
+      width: 250px;
+      bottom: -70px;
+      right: 100px;
+      transform: rotate(10deg);
+      img {
+        width: 250px;
+        border-radius: 20px;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: #53a8ed;
+        top: -10px;
+        left: 10px;
+        border-radius: 20px;
+        z-index: -1;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.144);
+        transform: rotate(2deg);
+      }
     }
   }
 }
