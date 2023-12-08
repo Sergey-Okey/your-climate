@@ -478,4 +478,74 @@ a {
       height: 90%;
     }
   }
+  // Конец стилей секции "Services"
+}
+
+// Начало стилей секции "Pluses"
+
+.pluses {
+  display: flex;
+  width: 100%;
+  background: #abd9ff;
+  border-radius: 50px;
+  margin-bottom: 100px;
+  &_content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 100px;
+    gap: 3rem;
+    span {
+      font-size: 50px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    #p-1 {
+      transform: rotate(2deg);
+      transition: 0.5s;
+      &:hover {
+        transform: rotate(0deg);
+        transition: 0.5s;
+      }
+    }
+    #p-2 {
+      transform: rotate(-2deg);
+      transition: 0.5s;
+      &:hover {
+        transform: rotate(0deg);
+        transition: 0.5s;
+      }
+    }
+    #p-3 {
+      transform: rotate(2deg);
+      transition: 0.5s;
+      &:hover {
+        transform: rotate(0deg);
+        transition: 0.5s;
+      }
+    }
+    .block-content {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      background-color: #fff;
+      position: relative;
+      border-radius: 30px;
+      padding: 80px;
+    }
+    h2 {
+      font-size: 35px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      color: #677483;
+    }
+    img {
+      width: 350px;
+      border-radius: 10px;
+      position: relative;
+    }
+  }
 }
