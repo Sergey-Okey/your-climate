@@ -133,14 +133,90 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="feedback_content">
+                    <span>Остались вопросы? <br> Свяжитесь с нами, заполнив форму ниже!</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro necessitatibus dicta
+                        reiciendis, dignissimos autem velit iusto sapiente quae amet.</p>
+                    <form action="/submit_form" method="post" onsubmit="return showConfirmation()">
+                        <div>
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" required placeholder="Ваше имя">
+                        </div>
+                        <div>
+                            <label for="phone"></label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 999 99 99">
+                        </div>
+                        <div>
+                            <label for="subject"></label>
+                            <input type="text" id="subject" name="subject" placeholder="Ваше обращение">
+                        </div>
+                        <div>
+                            <input id="button_form-sabmit" type="submit" value="Отправить">
+                        </div>
+                    </form>
 
+                    <p class="confirmation-message" id="confirmation"><i>Ваше письмо отправлено, мы скоро с вами
+                            свяжемся!</i>
+                    </p>
                 </div>
             </section>
         </main>
-        <footer>
-
+        <footer class="footer">
+            <div class="footer_content">
+                <div class="logo">
+                    <a href="index.html"><img src="assect/images/logo.png" alt="logo" style="width: 100px;"></a>
+                    <span>©Ваш климат 2023. Все права защищены.</span>
+                    <a href="/">Политика конфиденциальности</a>
+                </div>
+                <nav class="footer_nav">
+                    <ul>
+                        <li><a href="" class="active">Главная</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Продукция</a></li>
+                    </ul>
+                </nav>
+                <div class="footer_info">
+                    <a href="tel:+7 (953) 477-42-31">+7 (953) 477-42-31</a>
+                    <a href="mail:"></a>
+                    <span>ул. Степана Разина, 3, Орёл
+                        этаж 2, офис 8</span>
+                </div>
+            </div>
         </footer>
     </div>
+    <script>
+        function showConfirmation() {
+            var confirmation = document.getElementById("confirmation");
+            confirmation.style.display = "block";
+            return false;
+        }
+        document.getElementById('отправить').addEventListener('click', function () {
+            var имя = document.getElementById('имя').value;
+            var email = document.getElementById('email').value;
+            var сообщение = document.getElementById('сообщение').value;
+
+            var xhr = new XMLHttpRequest();
+            var url = 'отправить_на_почту.php'; // Путь к серверному скрипту отправки почты
+
+            var data = 'имя=' + имя + '&email=' + email + '&сообщение=' + сообщение;
+            xhr.open('POST', url, true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                    alert('Ваше сообщение отправлено');
+                } else {
+                    alert('Произошла ошибка при отправке сообщения');
+                }
+            };
+
+            xhr.send(data);
+        });
+    </script>
 </body>
 
 </html>
