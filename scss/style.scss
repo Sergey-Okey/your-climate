@@ -168,12 +168,12 @@ body {
 
 /* Стили для заголовков */
 h1 {
-  font-size: 2em;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.2rem;
   margin-bottom: 15px;
 }
 
@@ -211,7 +211,7 @@ a {
       gap: 4rem;
       li {
         a {
-          font-size: 1.1rem;
+          font-size: 1rem;
           font-weight: 600;
           color: var(--color-dark);
           text-wrap: nowrap;
@@ -235,7 +235,6 @@ a {
       border-radius: 30px;
       a {
         color: #fff;
-        font-size: 1.1rem;
         font-weight: 700;
       }
     }
@@ -284,7 +283,6 @@ a {
     }
     h1 {
       color: #fff;
-      font-size: 4rem;
       line-height: 100%;
       width: 80%;
       margin-bottom: 60px;
@@ -410,7 +408,7 @@ a {
   .services_title {
     display: flex;
     margin-bottom: 50px;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 600;
     width: 80%;
   }
@@ -434,7 +432,6 @@ a {
     h2 {
       font-weight: 700;
       margin-top: 20px;
-      font-size: 1.5rem;
     }
     .card_content {
       display: flex;
@@ -451,7 +448,7 @@ a {
     }
     span {
       font-weight: 500;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
   .after {
@@ -498,7 +495,7 @@ a {
     gap: 3rem;
     span {
       color: #fff;
-      font-size: 50px;
+      font-size: 2.5rem;
       font-weight: 600;
       margin-bottom: 30px;
     }
@@ -536,11 +533,11 @@ a {
       padding: 80px;
     }
     h2 {
-      font-size: 35px;
+      font-size: 1.8rem;
       font-weight: 600;
     }
     p {
-      font-size: 20px;
+      font-size: 1rem;
       font-weight: 400;
       color: #677483;
     }
@@ -593,9 +590,9 @@ a {
       border: 2px solid #fff;
       width: 200px;
       height: 50px;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: #fff;
-      font-weight: 500;
+      font-weight: 600;
     }
     #button_form-sabmit:hover {
       box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.671);
@@ -608,12 +605,12 @@ a {
       flex-wrap: wrap;
       margin-top: 50px;
       input {
-        width: 240px;
+        width: 230px;
         height: 30px;
         border: 2px solid #fff;
         border-radius: 30px;
         padding: 10px 20px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #677483#fff;
         font-weight: 500;
       }
@@ -644,12 +641,12 @@ a {
       flex-direction: column;
     }
     a {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       line-height: 150%;
       color: #fff;
     }
     span {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #fff;
       margin: 10px 0;
     }
