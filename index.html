@@ -18,7 +18,6 @@
                 </div>
                 <nav class="nav">
                     <ul>
-                        <li><a href="" class="active">Главная</a></li>
                         <li><a href="">О нас</a></li>
                         <li><a href="">Контакты</a></li>
                         <li><a href="">Продукция</a></li>
@@ -96,7 +95,7 @@
 
             <section class="pluses">
                 <div class="pluses_content">
-                    <span>Наши плюсы</span>
+                    <h1>Наши плюсы</h1>
                     <div class="pluses_block">
                         <div id="p-1" class="block-content">
                             <div class="block_text">
@@ -135,6 +134,61 @@
                     </div>
                 </div>
             </section>
+
+            <section class="grid_portfolio">
+                <h1>Наши работы</h1>
+                <div class="grid_item">
+                    <div class="item_content">
+                        <img src="" alt="">
+                        <h2>1</h2>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="item_content">
+                        <img src="" alt="">
+                        <h2>2</h2>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="item_content">
+                        <img src="" alt="">
+                        <h2>3</h2>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="item_content">
+                        <img src="" alt="">
+                        <h2>4</h2>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="item_content">
+                        <img src="" alt="">
+                        <h2>5</h2>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="item_content">
+                        <img src="" alt="">
+                        <h2>6</h2>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="item_content">
+                        <img src="" alt="">
+                        <h2>7</h2>
+                        <span></span>
+                    </div>
+                </div>
+            </section>
+
+
             <section class="feedback">
                 <div class="feedback_content">
                     <span>Остались вопросы? <br> Свяжитесь с нами, заполнив форму ниже!</span>
@@ -188,35 +242,6 @@
             </div>
         </footer>
     </div>
-    <script>
-        function showConfirmation() {
-            var confirmation = document.getElementById("confirmation");
-            confirmation.style.display = "block";
-            return false;
-        }
-        document.getElementById('отправить').addEventListener('click', function () {
-            var имя = document.getElementById('имя').value;
-            var email = document.getElementById('email').value;
-            var сообщение = document.getElementById('сообщение').value;
-
-            var xhr = new XMLHttpRequest();
-            var url = 'отправить_на_почту.php'; // Путь к серверному скрипту отправки почты
-
-            var data = 'имя=' + имя + '&email=' + email + '&сообщение=' + сообщение;
-            xhr.open('POST', url, true);
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-                    alert('Ваше сообщение отправлено');
-                } else {
-                    alert('Произошла ошибка при отправке сообщения');
-                }
-            };
-
-            xhr.send(data);
-        });
-    </script>
 </body>
 
 </html>
