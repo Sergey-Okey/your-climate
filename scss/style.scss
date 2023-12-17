@@ -486,8 +486,25 @@ a {
 .product {
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
   &_title {
-    color: #fff;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin: 50px 0;
+    }
+  }
+  &_grid-images {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196f3;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 30px;
+    img {
+      width: 200px;
+    }
   }
 }
 
@@ -698,5 +715,4 @@ a {
   border-bottom-right-radius: 30px;
   transition: all 0.2s ease;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.144);
-
 }
