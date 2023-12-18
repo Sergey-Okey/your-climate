@@ -487,6 +487,11 @@ a {
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
+  &_content{
+    background-color: #f3f2f2;
+    padding: 30px;
+    border-radius: 20px;
+  }
   &_title {
     h2 {
       font-size: 2.5rem;
@@ -496,8 +501,8 @@ a {
   }
   &_items {
     background-color:#53a8ed;
-    border-radius: 20px;
-    padding: 30px;
+    border-radius: 30px;
+    padding: 50px 30px;
     margin: 30px 0;
     color: #fff;
     h2 {
