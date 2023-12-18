@@ -487,20 +487,18 @@ a {
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
-  &_content{
-    background-color: #f3f2f2;
-    padding: 30px;
-    border-radius: 20px;
-  }
+  background-color: #f3f2f2;
+  padding: 30px;
+  border-radius: 20px;
   &_title {
     h2 {
       font-size: 2.5rem;
       font-weight: 600;
-      margin: 50px 0;
+      margin: 50px;
     }
   }
   &_items {
-    background-color:#53a8ed;
+    background-color: #53a8ed;
     border-radius: 30px;
     padding: 50px 30px;
     margin: 30px 0;
@@ -517,6 +515,9 @@ a {
     }
     strong {
       font-size: 1.2rem;
+      background-color: red;
+      border-radius: 10px;
+      padding: 0 10px;
     }
     b {
       font-size: 1rem;
@@ -525,24 +526,24 @@ a {
   }
   &_grid-images {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
-    row-gap: 10px;
-    border-radius: 20px;
-    width: 40%;
+    width: 50%;
+    grid-template-columns: auto auto;
+    border-radius: 30px;
     margin: 30px 0;
+    row-gap: 10px;
+    gap: 20px;
     img {
-      width: 250px;
-      border-radius: 20px;
+      width: 100%;
       cursor: pointer;
     }
   }
   &_grid-image-item {
     display: flex;
-    padding: 0;
-    font-size: 30px;
-    text-align: center;
+    width: 250px;
+    height: 250px;
     border-radius: 20px;
+    background-color: #fff;
+    color: #677483;
   }
   p {
     width: 80%;
@@ -572,6 +573,12 @@ a {
     h1 {
       color: #fff;
       margin-bottom: 30px;
+    }
+    span{
+      background-color: red;
+      border-radius: 10px;
+      padding: 0 10px;
+      color: #fff;
     }
     #p-1 {
       transform: rotate(2deg);
@@ -604,7 +611,7 @@ a {
       background-color: #fff;
       position: relative;
       border-radius: 30px;
-      padding: 80px;
+      padding: 50px;
     }
     h2 {
       font-size: 1.8rem;
@@ -614,6 +621,7 @@ a {
       font-size: 1rem;
       font-weight: 400;
       color: #677483;
+      font-weight: 500;
     }
     img {
       width: 350px;
@@ -674,7 +682,7 @@ a {
       text-align: center;
     }
     p {
-      color: #e7e7e7;
+      color: #fff;
       font-size: 1.2rem;
       margin: 30px 0;
       width: 60%;
