@@ -18,7 +18,7 @@
                 </div>
                 <nav class="nav">
                     <ul>
-                        <li><a href="">О нас</a></li>
+                        <li><a href="#grid-portfolio">О нас</a></li>
                         <li><a href="#feedback">Контакты</a></li>
                         <li><a href="#product">Продукция</a></li>
                     </ul>
@@ -38,7 +38,7 @@
                     <span>Гарантия <span class="danger">5</span> лет</span>
                     <span>Особый подход к каждому клиенту</span>
                     <button class="gretings_button">
-                        <a href="/">Сделать заказ</a>
+                        <a href="#" id="openModal">Сделать заказ</a>
                         <img src="assect/images/gretings/arrow-right.png" alt="arrow-right" />
                     </button>
                     <img id="line-left" src="assect/images/gretings/back-gretings-left.svg" alt="line-left" />
@@ -95,7 +95,7 @@
                 </div>
             </section>
             <!--Product-->
-            <section id="product" class="product">
+            <section id="product" class="product menu-link">
                 <div class="product_title">
                     <h2>Кондиционеры</h2>
                 </div>
@@ -259,7 +259,7 @@
                                         000</span> настенных сплит-систем.
                                 </p>
                             </div>
-                            <div class="block_img">
+                            <div class="block_img ">
                                 <img src="assect/images/services/selection.jpg" alt="" />
                             </div>
                         </div>
@@ -296,74 +296,21 @@
                 </div>
             </section>
             <!--Grid-portfolio-->
-            <section class="grid-portfolio">
-                <h1>Наши работы</h1>
-                <div class="grid_item">
-                    <div class="item_content">
-                        <img src="" alt="" />
-                        <h2>1</h2>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="grid_item">
-                    <div class="item_content">
-                        <img src="" alt="" />
-                        <h2>2</h2>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="grid_item">
-                    <div class="item_content">
-                        <img src="" alt="" />
-                        <h2>3</h2>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="grid_item">
-                    <div class="item_content">
-                        <img src="" alt="" />
-                        <h2>4</h2>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="grid_item">
-                    <div class="item_content">
-                        <img src="" alt="" />
-                        <h2>5</h2>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="grid_item">
-                    <div class="item_content">
-                        <img src="" alt="" />
-                        <h2>6</h2>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="grid_item">
-                    <div class="item_content">
-                        <img src="" alt="" />
-                        <h2>7</h2>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="grid_item">
-                    <div class="item_content">
-                        <img src="" alt="" />
-                        <h2>8</h2>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="grid_item">
-                    <div class="item_content">
-                        <img src="" alt="" />
-                        <h2>9</h2>
-                        <span></span>
-                    </div>
+            <section id="grid-portfolio" class="grid-portfolio menu-link">
+                <h1>О нас</h1>
+                <div class="map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/org/vash_klimat/72011748203/features/?ll=36.078150%2C52.969232&z=17.6"
+                        frameborder="1" allowfullscreen="true"
+                        style=" width: 100%; height: 600px; border-radius: 30px; border: 0; ">
+                    </iframe>
+                    <iframe style="width:73%; height:1000px; border-radius:30px; border: 0; margin: 0 auto;"
+                        src="https://yandex.ru/maps-reviews-widget/72011748203?comments">
+                    </iframe>
                 </div>
             </section>
             <!--Feedback-->
-            <section id="feedback" class="feedback">
+            <section id="feedback" class="feedback menu-link">
                 <div class="feedback_content">
                     <span>Остались вопросы? <br />
                         Свяжитесь с нами, заполнив форму ниже!</span>
@@ -419,6 +366,7 @@
                 </div>
             </div>
         </footer>
+
     </div>
     <!--Import Script JS-->
     <script src="js/script.js"></script>
