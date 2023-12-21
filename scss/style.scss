@@ -633,25 +633,6 @@ a {
   }
 }
 
-// Стили для секции "Grid Portfolio"
-
-.grid-portfolio {
-  display: flex;
-  flex-direction: column;
-  background-color: #2196f3;
-  border-radius: 30px;
-  padding: 100px;
-  h1 {
-    color: #fff;
-    margin-bottom: 50px;
-  }
-  .map {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-}
-
 // Начало стилей секции "Feedback"
 
 .feedback {
