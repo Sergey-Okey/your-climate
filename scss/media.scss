@@ -1,0 +1,87 @@
+/* Стили для телефонов (ширина экрана до 767 пикселей) */
+@media only screen and (max-width: 767px) {
+  html {
+  }
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .container {
+    padding: 0 10px;
+  }
+
+  .burger-menu {
+    display: block; /* Показываем бургер-меню */
+  }
+  .header {
+    &_content {
+      display: block;
+      position: sticky;
+      top: 0;
+      nav {
+        display: none;
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+  #line-left,
+  #line-right {
+    opacity: 0;
+  }
+
+  //Gretings
+
+  .gretings {
+    &_content {
+      margin: 30px auto;
+      .span_info {
+        width: 90%;
+        text-align: center;
+      }
+      h1 {
+        font-size: 2.2rem;
+        text-align: center;
+        width: 100%;
+      }
+      span {
+        text-align: center;
+      }
+      #installation,
+      #installation2 {
+        display: none;
+      }
+      .gretings_button {
+        a {
+          text-wrap: nowrap;
+        }
+      }
+    }
+  }
+  // Services
+  .services {
+    margin-top: 50px;
+    .services_title {
+      font-size: 2rem;
+      width: 100%;
+    }
+    .after {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Стили для планшетов (ширина экрана от 768 пикселей до 991 пикселя) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Стили для ноутбуков (ширина экрана от 992 пикселей до 1199 пикселей) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Стили для устройств с экранами более 1200 пикселей */
+@media only screen and (min-width: 1200px) {
+}
