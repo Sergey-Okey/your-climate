@@ -1,7 +1,9 @@
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (window.pageYOffset > 50 || document.documentElement.scrollTop > 50) {
     document.querySelector(".header").classList.add("scrolled");
   } else {
     document.querySelector(".header").classList.remove("scrolled");
@@ -19,28 +21,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Active Link
-document.addEventListener('scroll', function () {
-  var menuLinks = document.querySelectorAll('.menu-link');
-
-  menuLinks.forEach(function (link) {
-    var sectionId = link.getAttribute('href').substring(1);
-    var section = document.getElementById(sectionId);
-
-    if (section.offsetTop <= window.scrollY && section.offsetTop + section.offsetHeight > window.scrollY) {
-      menuLinks.forEach(function (link) {
-        link.classList.remove('active');
-      });
-      link.classList.add('active');
-    } else {
-      link.classList.remove('active');
-    }
-  });
-});
-
-
 // Modal Windows
-
 document.getElementById('openModal').addEventListener('click', function () {
   document.getElementById('modal').style.display = 'block';
 });
@@ -50,7 +31,23 @@ document.getElementsByClassName('close')[0].addEventListener('click', function (
 });
 
 window.addEventListener('click', function (event) {
-  if (event.target == document.getElementById('modal')) {
-    document.getElementById('modal').style.display = 'none';
+  var modal = document.getElementById('modal');
+
+  if (event.target === modal) {
+    modal.style.display = 'none';
   }
 });
+
+// Дополнительная логика для адаптивности к мобильным устройствам
+var isMobile = window.innerWidth <= 767; // Подстройте порог по необходимости
+
+if (isMobile) {
+  // Добавление обработчиков событий или изменение поведения для мобильных устройств
+  // Например, можно закрыть модальное окно при касании вне его области
+  document.body.addEventListener('click', function (event) {
+    var modal = document.getElementById('modal');
+    if (event.target !== modal && !modal.contains(event.target)) {
+      modal.style.display = 'none';
+    }
+  });
+}
