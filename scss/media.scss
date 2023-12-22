@@ -210,3 +210,24 @@
     display: none;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  #installation2,
+  #installation {
+    display: none;
+  }
+  .services_content{
+    gap: 3rem;
+  }
+  .feedback{
+    p{
+      width: 80%;
+      margin: 0 auto;
+    }
+    form{
+      justify-content: center;
+    }
+  }
+}

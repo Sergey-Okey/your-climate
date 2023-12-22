@@ -38,16 +38,3 @@ window.addEventListener('click', function (event) {
   }
 });
 
-// Дополнительная логика для адаптивности к мобильным устройствам
-var isMobile = window.innerWidth <= 767; // Подстройте порог по необходимости
-
-if (isMobile) {
-  // Добавление обработчиков событий или изменение поведения для мобильных устройств
-  // Например, можно закрыть модальное окно при касании вне его области
-  document.body.addEventListener('click', function (event) {
-    var modal = document.getElementById('modal');
-    if (event.target !== modal && !modal.contains(event.target)) {
-      modal.style.display = 'none';
-    }
-  });
-}
