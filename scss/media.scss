@@ -1,15 +1,14 @@
 /* Стили для телефонов (ширина экрана до 767 пикселей) */
 @media only screen and (max-width: 460px) {
   html {
-    width: 460px;
+    max-width: 460px;
     overflow-x: hidden;
   }
   body {
-    width: 100%;
+    width: 460px;
     margin: 0 auto;
   }
   .container {
-    width: 100%;
     padding: 0 10px;
   }
 
