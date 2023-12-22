@@ -72,6 +72,105 @@
       }
     }
   }
+  // Product
+
+  .product {
+    h2 {
+      margin: 0;
+    }
+  }
+  .product_grid-images {
+    width: 100%;
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+  }
+  .product_items {
+    p {
+      width: 100%;
+    }
+    ol {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  // Pluses
+  .pluses {
+    width: 100%;
+  }
+  .pluses_content {
+    margin: 30px 0;
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .pluses_content #p-1 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    transform: rotate(0deg);
+    &:hover {
+      transform: rotate(0deg);
+      transition: 0.5s;
+    }
+  }
+  .pluses_content #p-2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    transform: rotate(0deg);
+    &:hover {
+      transform: rotate(0deg);
+      transition: 0.5s;
+    }
+  }
+  .pluses_content #p-3 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    transform: rotate(0deg);
+    &:hover {
+      transform: rotate(0deg);
+      transition: 0.5s;
+    }
+  }
+  //Grid Portfolio
+  .grid-portfolio{
+    h1{
+      margin: 0 auto;
+    }
+    iframe{
+      width: 100%;
+    }
+  }
+  //Feedback
+  .feedback{
+    p{
+      margin: 20px 0;
+      width: 100%;
+    }
+    span{
+      font-size: 2rem;
+    }
+    form{
+      justify-content: center;
+    }
+  }
+
+  // Footer
+  .footer_content{
+    flex-direction: column;
+  }
+  .footer_info{
+    width: 100%;
+  }
+  .footer_nav{
+    display: none;
+  }
 }
 
 /* Стили для планшетов (ширина экрана от 768 пикселей до 991 пикселя) */
