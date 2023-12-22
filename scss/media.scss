@@ -1,6 +1,7 @@
 /* Стили для телефонов (ширина экрана до 767 пикселей) */
 @media only screen and (max-width: 767px) {
   html {
+    width: 100vw;
   }
   body {
     width: 100vw;
@@ -139,36 +140,36 @@
     }
   }
   //Grid Portfolio
-  .grid-portfolio{
-    h1{
+  .grid-portfolio {
+    h1 {
       margin: 0 auto;
     }
-    iframe{
+    iframe {
       width: 100%;
     }
   }
   //Feedback
-  .feedback{
-    p{
+  .feedback {
+    p {
       margin: 20px 0;
       width: 100%;
     }
-    span{
+    span {
       font-size: 2rem;
     }
-    form{
+    form {
       justify-content: center;
     }
   }
 
   // Footer
-  .footer_content{
+  .footer_content {
     flex-direction: column;
   }
-  .footer_info{
+  .footer_info {
     width: 100%;
   }
-  .footer_nav{
+  .footer_nav {
     display: none;
   }
 }
