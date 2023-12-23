@@ -12,6 +12,37 @@
     display: block;
   }
 
+  //Open Modal
+  #openModal {
+    z-index: 1;
+  }
+
+  .modal-content {
+    max-width: 95%;
+    top: 0;
+    left: 0;
+    margin: 140px auto;
+  }
+
+  .modal-header {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  #orderForm {
+    margin-top: 20px;
+    button {
+      margin: 0 auto;
+      width: 100%;
+    }
+    select {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+
+  //-----------------
   .nav-burger {
     display: none;
     flex-direction: column;
@@ -113,7 +144,7 @@
         width: 100%;
       }
     }
-    .card_info{
+    .card_info {
       text-align: center;
     }
     .after {
@@ -204,15 +235,15 @@
       transition: 0.5s;
     }
   }
-  .block_text{
-    p{
+  .block_text {
+    p {
       font-size: 1rem;
       text-align: center;
     }
-    span{
+    span {
       font-size: 1rem;
     }
-    h2{
+    h2 {
       text-align: center;
     }
   }

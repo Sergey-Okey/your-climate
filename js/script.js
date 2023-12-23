@@ -31,16 +31,6 @@ document.getElementsByClassName('close')[0].addEventListener('click', function (
   document.getElementById('modal').style.display = 'none';
 });
 
-window.addEventListener('click', function (event) {
-  var modal = document.getElementById('modal');
-
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-});
-
-
-
 // Burger Menu
 document.querySelector('.menu-toggle').addEventListener('click', function () {
   this.classList.toggle('active');

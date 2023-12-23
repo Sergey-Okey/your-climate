@@ -844,7 +844,6 @@ body {
 // Modal Windows
 
 .modal {
-  background-color: unset;
   display: none;
   position: fixed;
   z-index: 1;
@@ -853,17 +852,31 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.555);
-  z-index: 3;
 }
-
 .modal-content {
+  display: flex;
+  flex-direction: column;
   background-color: #fefefe;
-  margin: 15% auto;
-  padding: 50px;
-  border: 3px solid #fd0101;
+  border: 0;
+  top: 35%;
+  left: 25%;
   border-radius: 30px;
   max-width: 50%;
   position: relative;
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      margin: 0;
+    }
+  }
+  .item-content {
+    display: flex;
+  }
+  .modal-item {
+    margin: 50px;
+  }
   input {
     width: 230px;
     height: 30px;
@@ -916,7 +929,6 @@ body {
 
 .close {
   color: #aaa;
-  float: right;
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
