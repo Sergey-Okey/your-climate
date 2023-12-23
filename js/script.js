@@ -22,6 +22,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Modal Windows
+
 document.getElementById('openModal').addEventListener('click', function () {
   document.getElementById('modal').style.display = 'block';
 });
@@ -37,6 +38,7 @@ window.addEventListener('click', function (event) {
     modal.style.display = 'none';
   }
 });
+
 
 
 // Burger Menu
