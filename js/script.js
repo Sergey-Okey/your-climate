@@ -38,3 +38,24 @@ window.addEventListener('click', function (event) {
   }
 });
 
+//Open img
+
+document.getElementById('fullscreen-image').addEventListener('click', function () {
+  if (this.style.width === "50%") {
+    this.style.width = "auto";
+    this.style.position = "static";
+  } else {
+    // код для увеличения изображения на 70% ширины экрана
+    this.style.width = "50%";
+    this.style.position = "fixed";
+    this.style.top = "50%";
+    this.style.left = "50%";
+    this.style.transform = "translate(-50%, -50%)";
+  }
+});
+
+// Burger Menu
+document.querySelector('.menu-toggle').addEventListener('click', function () {
+  this.classList.toggle('active');
+});
+

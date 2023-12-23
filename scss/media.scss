@@ -7,9 +7,48 @@
   .container {
     width: 95%;
   }
+  /* Показываем бургер-меню */
+  .menu-toggle {
+    display: block;
+  }
 
-  .burger-menu {
-    display: block; /* Показываем бургер-меню */
+  .nav-burger {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90px; /* Начальное положение до появления */
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.144);
+    transition: all 0.8s ease; /* Добавление анимации */
+    animation: slideIn 0.8s ease; /* Применение анимации при активации класса */
+  }
+  @keyframes slideIn {
+    from {
+      top: -100%; /* Начальное положение за пределами верхней границы */
+    }
+    to {
+      top: 90px; /* Конечное положение после анимации */
+    }
+  }
+  .nav-burger ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    align-items: center;
+    li {
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .menu-toggle.active .nav-burger {
+    display: flex;
   }
 
   .header {
@@ -218,15 +257,15 @@
   #installation {
     display: none;
   }
-  .services_content{
+  .services_content {
     gap: 3rem;
   }
-  .feedback{
-    p{
+  .feedback {
+    p {
       width: 80%;
       margin: 0 auto;
     }
-    form{
+    form {
       justify-content: center;
     }
   }
