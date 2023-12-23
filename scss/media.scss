@@ -113,6 +113,9 @@
         width: 100%;
       }
     }
+    .card_info{
+      text-align: center;
+    }
     .after {
       &::after {
         display: none;
@@ -199,6 +202,18 @@
     &:hover {
       transform: rotate(0deg);
       transition: 0.5s;
+    }
+  }
+  .block_text{
+    p{
+      font-size: 1rem;
+      text-align: center;
+    }
+    span{
+      font-size: 1rem;
+    }
+    h2{
+      text-align: center;
     }
   }
   .pluses_content #p-3 {

@@ -454,7 +454,7 @@ a {
     position: relative;
     display: flex;
     width: 370px;
-    
+
     border-radius: 30px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.144);
     img {
@@ -778,6 +778,10 @@ a {
     .logo {
       display: flex;
       flex-direction: column;
+      #confid {
+        text-decoration: underline;
+        font-weight: 600;
+      }
     }
     a {
       font-size: 1.1rem;
@@ -794,6 +798,10 @@ a {
     width: 20%;
     display: flex;
     flex-direction: column;
+    a {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
   }
 }
 .scrolled {
