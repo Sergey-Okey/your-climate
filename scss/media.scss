@@ -133,6 +133,8 @@
       width: 100%;
       text-align: center;
       font-size: 40px;
+			margin: 0;
+			margin-bottom: 50px;
     }
     .services_content {
       width: 100%;
@@ -324,6 +326,7 @@
   }
   .services_content {
     gap: 3rem;
+		flex-wrap: wrap;
   }
   .feedback {
     p {
