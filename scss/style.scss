@@ -439,26 +439,24 @@ a {
   margin-bottom: 100px;
   .services_title {
     display: flex;
-    margin-bottom: 50px;
+    margin: 50px;
     font-size: 2.5rem;
     font-weight: 600;
     width: 80%;
   }
   &_content {
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
   }
   &_card {
     position: relative;
     display: flex;
-    width: 370px;
-
+    width: 350px;
     border-radius: 30px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.144);
     img {
-      width: 370px;
+      width: 350px;
       border-radius: 30px;
     }
     h2 {
@@ -953,5 +951,4 @@ body {
   p {
     font-size: 1.3rem;
   }
- 
 }
