@@ -569,14 +569,17 @@ a {
   }
   &_grid-image-item {
     display: flex;
-		justify-content: center;
-		align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 250px;
     height: 250px;
     border-radius: 30px;
     background-color: #fff;
     color: #677483;
     overflow: hidden;
+    img {
+      width: 240px;
+    }
   }
   p {
     width: 80%;
