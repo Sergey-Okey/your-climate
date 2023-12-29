@@ -133,12 +133,12 @@
       width: 100%;
       text-align: center;
       font-size: 40px;
-			margin: 0;
-			margin-bottom: 50px;
+      margin: 0;
+      margin-bottom: 50px;
     }
     .services_content {
       width: 100%;
-			flex-wrap: wrap
+      flex-wrap: wrap;
     }
     .services_card {
       width: 95%;
@@ -167,6 +167,8 @@
   .product_grid-images {
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 30px auto;
     flex-direction: column;
   }
@@ -326,7 +328,7 @@
   }
   .services_content {
     gap: 3rem;
-		flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .feedback {
     p {

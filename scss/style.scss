@@ -569,6 +569,8 @@ a {
   }
   &_grid-image-item {
     display: flex;
+		justify-content: center;
+		align-items: center;
     width: 250px;
     height: 250px;
     border-radius: 30px;
