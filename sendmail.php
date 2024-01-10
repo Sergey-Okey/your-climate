@@ -5,7 +5,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Получение данных из формы
     $name = $_POST["name"];
     $email = $_POST["email"];
-    $message = $_POST["message"];
+    $message = $_POST["subject"];
+		$phon = $_POST["phone"];
 
     // Формирование заголовков для письма
     $subject = "Новое сообщение с сайта";
