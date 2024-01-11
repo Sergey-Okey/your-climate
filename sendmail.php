@@ -1,27 +1,34 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "massage@vashklimat.ru"; // Адрес, на который будут приходить сообщения
+    // Получаем данные из формы
+    $name = trim($_POST["name"]);
+    $phone = trim($_POST["phone"]);
+    $message = trim($_POST["subject"]);
 
-    // Получение данных из формы
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $message = $_POST["subject"];
-		$phon = $_POST["phone"];
+    // Адрес, на который отправлять письмо
+    $to = "massage@vashklimat.ru";
 
-    // Формирование заголовков для письма
-    $subject = "Новое сообщение с сайта";
-    $headers = "From: " . $email;
+    // Заголовки письма
+    $headers = "From: $name <$to>" . "\r\n";
+    $headers .= "Reply-To: $to" . "\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8" . "\r\n";
 
-    // Формирование тела сообщения
-    $email_body = "Имя: $name\nEmail: $email\n\n$message";
+    // Текст письма
+    $message = "Имя: $name\n";
+    $message .= "Телефон: $phone\n";
+    $message .= "Обращение: $subject\n";
 
-    // Отправка сообщения
-    if (mail($to, $subject, $email_body, $headers)) {
-        echo "Сообщение успешно отправлено";
+    // Отправка письма
+    $success = mail($to, "Новое обращение с формы", $message, $headers);
+
+    if ($success) {
+        echo "Ваше сообщение успешно отправлено."; 
     } else {
-        echo "При отправке сообщения возникла ошибка";
+        echo "Ошибка при отправке сообщения. Пожалуйста, попробуйте позже.";
     }
 } else {
-    echo "Доступ запрещен"; // Если пользователь пытается обратиться к этому скрипту напрямую
+    // Если форма не отправлена методом POST, перенаправляем на главную страницу
+    header("Location: index.html");
+    exit;
 }
 ?>
