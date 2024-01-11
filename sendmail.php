@@ -3,7 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Получаем данные из формы
     $name = trim($_POST["name"]);
     $phone = trim($_POST["phone"]);
-    $message = trim($_POST["subject"]);
+    $subject = trim($_POST["subject"]);
 
     // Адрес, на который отправлять письмо
     $to = "massage@vashklimat.ru";
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $success = mail($to, "Новое обращение с формы", $message, $headers);
 
     if ($success) {
-        echo "Ваше сообщение успешно отправлено."; 
+        echo "Ваше сообщение успешно отправлено.";
     } else {
         echo "Ошибка при отправке сообщения. Пожалуйста, попробуйте позже.";
     }
