@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = trim($_POST["subject"]);
 
     // Адрес, на который отправлять письмо
-    $to = "massage@vashklimat.ru";
+    $to = "mail.vashklimat.ru";
 
     // Заголовки письма
     $headers = "From: $name <$to>" . "\r\n";
